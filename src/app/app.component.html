@@ -1,0 +1,10 @@
+<h1 appBgStyle>Counter</h1>
+
+<!-- Child Component-->
+<app-counter [counterParent]="counter">  </app-counter>
+
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+
+<h2>Book list</h2>
+<ul *ngFor="let book of bookList">{{book}}</ul>
